@@ -1,0 +1,22 @@
+cd /lib                                                               
+ls                                                                    
+cd /var/lib                                                           
+ls                                                                    
+cd docker/                                                            
+ls                                                                    
+xs containers                                                         
+cd containers                                                         
+ls                                                                    
+cd 0174b1e34d99dcd1876a6729db8bb754456c151028ea39bc5513de35a310802a/  
+ls           \
+docker attach 0174  
+docker              
+docker ps -a        
+docker run-it 0174  
+docker run -it 0174 
+docker attch 0174   
+docker attach 0174  
+ls                  
+v resolv.conf       
+vi resolv.conf      
+history                                                                      

@@ -1,0 +1,8 @@
+docker pull elakkiamanickam/cts-web-app  
+docker pull elakkiamanickam/friendlyhello
+docker login                             
+docker images                            
+docker login                             
+docker pull ubuntu                       
+docker login                             
+history                                  

@@ -1,0 +1,2 @@
+docker inspect --format '{{.Name}}'  $(docker ps -ql)
+docker inspect $(docker ps -ql)

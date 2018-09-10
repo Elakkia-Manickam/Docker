@@ -1,0 +1,85 @@
+  docker login
+   31  docker pull ubuntu
+   32  docker login
+   33  history
+   34  docker ps -a
+   35  docker ps
+   36  docker images
+   37  docker ps
+   38  docker images
+   39  docker ps -a
+   40  docker ps -aq
+   41  doker rm $(docker ps -a)
+   42  doker rm $(docker ps -aq)
+   43  docker rm $(docker ps -a)
+   44  docker rm $(docker ps -aq)
+   45  docker ps -aq
+   46  docker ps -a
+   47  docker run busybox echo"oii"
+   48  docker run busybox echo "oii"
+   49  docker run busybox echo "hi"
+   50  docker ps -a
+   51  docker run -it busybox
+   52  history
+   53  docker run -it ubuntu
+   54  docker ps
+   55  docker run -it ubuntu
+   56  docker ps -a
+   57  docker ps
+   58  docker run -itd ubuntu
+   59  docker ps
+   60  docker run -it ubuntu
+   61  docker ps
+   62  docker run -it ubuntu
+   63  docker ps
+   64  docker run -d ubuntu echo "elakkia"
+   65  docker ps
+   66  docker ps -a
+   67  docker run -it ubuntu
+   68  docker ps -a
+   69  docker ps
+   70  dcoker ps
+   71* docker start
+   72  dcoker ps -a
+   73  docker ps -a
+   74  docker start 7565d16a9c67
+   75  docker ps
+   76  docker rm $(docker ps -aq)
+   77  docker stop 4(docker ps -a)
+   78  docker stop $(docker ps -a)
+   79  docker rm $(docker ps -aq)
+   80  DOCKER PS
+   81  docker ps
+   82  docker ps -a
+   83  docker images
+   84  docker run -itd ubuntu
+   85  docker ps -a
+   86  docker ps
+   87  docker run -it ubuntu
+   88  docker ps
+   89  docker stop fd63cc31184d
+   90  docker ps
+   91  docker ps -a
+   92  docker ps
+   93  docker attach  a28
+   94  docker start fd63cc31184d
+   95  docker attach  fd6
+   96  docker start fd63cc31184d
+   97  docker kill fd6
+   98  docker ps
+   99  docker ps -a
+  100  docker ps -aq
+  101  docker ps
+  102  docker kill $(docker ps -aq)
+  103  docker rm $(docker ps -aq)
+  104  docker ps -a
+  105  docker ps
+  106  docker images
+  107  docker rmi  ubuntu
+  108  docker rmi  $(docker images)
+  109  docker images
+  110  docker rmi
+  111  docker rmi  ubuntu
+  112  history
+root@kube-master:~# idocker run ubuntu
+No command 'idoc

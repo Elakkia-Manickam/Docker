@@ -1,0 +1,5 @@
+       
+docker run busybox echo "Hello"            
+docker run busybox echo "Hello cts"        
+docker ps -a                               
+history                                    
