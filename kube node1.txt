@@ -1,0 +1,13 @@
+   1  cd /
+    2  pwd
+    3  mkdir node1
+    4  cd node1/
+    5  ls
+    6  cd ..
+    7  ls
+    8  cd node1/
+    9  vi install-node.sh
+   10  sh install-node.sh
+   11  kubeadm join 172.31.0.10:6443 --token nrczcz.e29e43fnijzn0f4g --discovery-token-ca-cert-hash sha256:37e6da6de889bdac9396fe977615292329c341ef6adba8871d9ceb85fc90f3a4
+   12  kubectl get nodes
+   13  history

@@ -1,0 +1,74 @@
+  1  cd ..
+    2  cd /
+    3  pwd
+    4  vi install-kubernetes.sh
+    5  ls
+    6  mkdir kube
+    7  cd kube
+    8  ls
+    9  mv /install-kubernetes.sh /kube/install-kubernetes.sh
+   10  ls
+   11  sh install-kubernetes.sh
+   12  sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+   13  kubectl get nodes
+   14  ls
+   15  cd
+   16  ls
+   17  cd /
+   18  kubectl get nodes
+   19  cd kube/
+   20  ls
+   21  git clone https://github.com/amitvashist7/kubernetes-project/
+   22  ls
+   23  cd kubernetes-project/
+   24  ls
+   25  cd first-app/
+   26  ls
+   27  kubectl get pod
+   28  kubectl create -f helloworld.yml
+   29  kubectl get pod
+   30  kubectl get pod -o wide
+   31  curl 1925.168.2.2
+   32  curl 192.168.2.2
+   33  ls
+   34  kubectl get pod
+   35  kubectl delete nodehelloworld
+   36  kubectl delete --nodehelloworld
+   37  kubectl
+   38  kubectl delete pod nodehelloworld
+   39  kubectl get pod
+   40  ls
+   41  vi helloworld-repl-controller.yml
+   42  kubectl create -f helloworld-repl-controller.yml
+   43  ls
+   44  kubectl get pod
+   45  kubectl get rc
+   46  kubectl scale --replicas=4 rc helloworld-controller
+   47  kubectl get pod
+   48  kubectl edit rc helloworld-controller
+   49  kubectl get pod
+   50  kubectl get rc
+   51  history
+
+
+
+#kube deplyemnt
+apiVersion: extensions/v1beta1kind: Deploymentmetadata:  name: helloworld-deploymentspec:  replicas: 3  template:    metadata:      labels:        app: helloworld    spec:      containers:      - name: k8s-demo        image: amitvashist7/k8s-tiny-web        ports:        - name: node-port          containerPort: 80
+
+
+599  kubectl create -f helloworld-deployment.yml 
+ 600  kubectl get deployments  
+601  kubectl get rs  
+602  kubectl get pods 
+ 603  kubectl get pods --show-labels  
+604  kubectl get pods --show-labels -o wide  
+605  kubectl rollout status deployment helloworld-deployment  
+606  kubectl expose deployment helloworld-deployment --type=NodePort 
+ 607  kubectl get svc  608  curl 10.109.233.46  
+609  kubectl describe service helloworld-deployment  
+610  kubectl get pods -o wide  
+611  kubectl scale --replicas=5 deployment helloworld-deployment  
+612  kubectl get pods -o wide  
+613  kubectl describe service helloworld-deployment  
+614  kubectl scale --replicas=2 deployment helloworld-deployment  
+615  kubectl describe service helloworld-deployment
