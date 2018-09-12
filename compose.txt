@@ -1,0 +1,22 @@
+vim docker-compose.yml
+  205  docker stack deploy -c docker-compose.yml mynewapp
+  206  vim docker-compose.yml
+  207  docker stack deploy -c docker-compose.yml mynewapp
+  208  vim docker-compose.yml
+  209  docker stack deploy -c docker-compose.yml mynewapp
+  210  docker service ls
+  211  docker service ps mynewapp_web
+  212  docker service scale mynewapp_web=5
+  213  docker service ps mynewapp_web
+  214  docker service scale mynewapp_web=10
+  215  docker service scale mynewapp_web=2
+  216  docker service ps mynewapp_web
+  217  docker network ls
+  218  history
+
+docker swarm init --advertise-addr 172.31.0.11
+from Super User 051 to All Participants:
+docker swarm join --token SWMTKN-1-567b2v99mebm2zxkfudub195or6m6prmm6r1zav0iod43u2uua-2bgdxgxhwgc03fl vrom25fbbo 172.31.0.11:2377
+
+
+  108  docker-compose up  109  docker-compose up -d  110  docker-compose ps  111  docker-compose --help  112  docker-compose top  113  vim docker-compose.yml  114  docker-compose up -d  115  docker-compose ps  116  docker-compose top

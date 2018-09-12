@@ -1,0 +1,41 @@
+23  docker network ls  
+ 24  docker network inspect bridge 
+  25  ip addr   
+26  docker network inspect bridge  
+ 27  docker ps  
+ 28  docker inspect apache-node-4 
+  29  docker run -d --name=apache-node-4 -p  4006:80 amitvashist7/myapache:v4  
+ 30  docker run -d --name=apache-node-5 -p  4006:80 amitvashist7/myapache:v4  
+ 31  docker ps   
+32  docker network inspect bridge  
+ 33  docker run -d --name=apache-node-6 -p  4007:80 amitvashist7/myapache:v4   
+34  docker network inspect bridge   
+35  ls  
+ 36  docker network create my-net-01   
+37  docker network ls   
+38  docker network inspect my-net-01   
+39  docker run -d --name=apache-node-7 --network  my-net-01 -p  4008:80 amitvashist7/myapache:v4   
+40  docker ps  
+ 41  ip addr   
+42  docker network ls   
+43  docker network inspect my-net-01   
+44  curl 172.18.0.2   
+45  docker network inspect bridge   
+46  curl 172.17.0.2   
+47  curl 172.17.0.3   
+48  curl 172.17.0.4   
+49  curl 172.17.0.5  
+ 50  docker net
+
+51 docker network create --help
+
+52 docker network create --driver=bridge --subnet=172.28.0.0/16 --ip-range=172.28.5.0/24 --gateway=172.28.5.254 my-net-wok-02
+
+
+
+
+
+
+53 docker network inspect my-net-wor-02
+54 docker ps
+

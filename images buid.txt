@@ -1,0 +1,35 @@
+  153  mkdir docker-build  
+154  cd docker-build/ 
+ 155  ls  156  mkdir apache 
+ 157  cd apache/ 
+ 158  ls 
+ 159  vim Dockerfile
+  160  docker build -t myapache .
+  161  docker images
+  162  docker images myapache  
+163  docker run -d myapache 
+ 164  docker ps  165  docker ps -a
+  166  docker run -d myapache:latest 
+ 167  docker ps 
+ 168  docker ps -a 
+ 169  docker run myapache:latest  170  docker ps  171  ls  
+172  vim Dockerfile
+  173  docker run -it myapache:latest /bin/bash  
+174  ls 
+ 175  docker build -t myapache:v2 .  
+176  docker run -d myapache:v2
+  177  docker ps  
+178  docker inspect d966cec64d40  
+179  curl 172.17.0.2
+  180  ip addr 
+ 181  vim Dockerfile  
+182  docker run -d myapache:v3  
+183  docker build -t myapache:v3 .  
+184  docker run -d myapache:v3  
+185  docker ps  
+186  docker inspect cb7e07c0407f  
+187  curl "172.17.0.3"
+  188  docker ps  
+189  curl localhost 
+ 190  docker run -d -p 4001:80 myapache:v3 
+ 191  docker ps

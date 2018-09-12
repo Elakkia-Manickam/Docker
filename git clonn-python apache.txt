@@ -1,0 +1,24 @@
+18  root@worker01:/home/vagrant# docker version
+   19*
+   20  ls
+   21  git
+   22  glt clone https://github.com/amitvashist7/docker-learner-CTS
+   23  git clone https://github.com/amitvashist7/docker-learner-CTS
+   24  ls
+   25  cd docker-learner-CTS/
+   26  ls
+   27  cd python-apache/
+   28  ls
+   29  docket build -t pythonapche:v1
+   30  docker build -t pythonapche:v1
+   31  docker build -t pythonapche:v1 .
+   32  docker images
+   33  docker run -d --name=pythonapache  -p 40005:80 pythonapache:v1
+
+   34  docker run -d --name=pythonapache  -p 40005:80 pythonapche:v1
+   35  docker ps -a
+   36  docker ps
+   37  clr
+   38  cls
+   39  glt
+   40  history

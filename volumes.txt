@@ -1,0 +1,54 @@
+324  docker run -d --name wwwdata-5 -v /root/docker-volumes/wwwdata:/var/lib/www busybox /bin/sh  
+325  docker ps  
+326  docker run -itd --name wwwdata-5 -v /root/docker-volumes/wwwdata:/var/lib/www busybox /bin/sh  
+327  docker run -itd --name wwwdata-6 -v /root/docker-volumes/wwwdata:/var/lib/www busybox /bin/sh
+  328  docker ps  
+329  docker run -itd --name wwwdata-7 -v /root/docker-volumes/wwwlog:/var/log/www busybox /bin/sh 
+ 330  docker ps  
+331  docker run -it --volumes-from wwwdata-7 ubuntu /bin/bash  
+332  docker ps  
+333  cd docker-volumes/www
+  334  cd docker-volumes/ 
+ 335  ls  336  cd wwwlog/ 
+ 337  ls  338  cd apache/  
+339  ls  
+340  cat index.html  
+341  cd  
+342  docker volume ls  
+343  docker volume create my-vol  
+344  docker volume ls  
+345  docker volume inspect my-vol 
+ 346  docker volume inspect 42ce365d23c8a8794a017ec9d60fdd1f0bcdd17f9ccfbb70325f02663bcff7a6 
+ 347  docker ps  
+348  docker volume ls  
+349  docker run -d --name devtest -v my-vol:/elakkia ubuntu /bin/bash
+
+373  docker volume ls  
+374  docker volume rm  my-vol  
+375  docker ps  
+376  docker ps -a  
+377  docker ps -a | grep devtest*  
+378  docker ps -a | grep devtest* | awk -F" " '{print $1}'  
+379  docker kill $(docker ps -a | grep devtest* | awk -F" " '{print $1}')  
+380  docker rm $(docker ps -a | grep devtest* | awk -F" " '{print $1}')  
+381  docker volume rm  my-vol  
+382  docker volume ls
+
+
+#craete customized volumes 
+ cd
+  343  mkdir sam
+  344  docker run -it -v sam:/var/sam alpine
+  345  cat sam/
+  346  cd sam/
+  347  ls
+  348  docker run -it -v /root/sam:/var/sam alpine
+  349  ls]
+  350  \ls
+  351  history
+  352  .
+  353  docker volume ls
+  354  cd /var/lib/docker/volumes/sam/_
+  355  cd /var/lib/docker/volumes/sam/_data/
+  356  ls
+  357  history
